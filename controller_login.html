@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搶錢旅遊網 管理者登入</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <style>
+      .bg {
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: -999;
+      }
+      .bg img {
+          min-height: 100%;
+          min-width: 1000px;
+          width: 100%;
+      }
+
+      @media screen and (max-width: 1000px) {
+          img.bg {
+              left: 50%;
+              margin-left: -500px;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div id="wrapper_login">
+      <header>
+        <p>搶錢旅遊公司 管理者登入</p>
+      </header>
+      <div="content">
+        </br>
+        <form action="php/r-login.php" method="post">
+          <div class="form-group">
+            <input class="form-control" placeholder="Login's Account" name="account" type="text">                
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Your Password" name="passwd" type="password">                 
+          </div>
+          <center><button type="submit" class="btn" onclick="location.href='controller_search.html'">管理者登錄</button></center>
+        </form>
+      </div>
+    </div>    
+  </body>
+</html>
